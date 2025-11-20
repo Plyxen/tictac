@@ -4,8 +4,18 @@ import kiiras
 def lepes(meret, tabla):
     sor = random.randint(0, int(meret)-1)
     oszlop = random.randint(0, int(meret)-1)
-    tabla[sor][oszlop] = 'O'
     
+    while tabla[sor][oszlop] != ' ':
+        if sor < 0 or sor >= meret or oszlop < 0 or oszlop >= meret:
+            sor = random.randint(0, int(meret)-1)
+            oszlop = random.randint(0, int(meret)-1)
+        elif tabla[sor][oszlop] != ' ':
+            sor = random.randint(0, int(meret)-1)
+            oszlop = random.randint(0, int(meret)-1)
+        else:
+            tabla[sor][oszlop] = 'O'
+    tabla[sor][oszlop] = 'O'
+
     kiiras.palya(meret, tabla)
     
     return tabla
