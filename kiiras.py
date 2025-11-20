@@ -18,10 +18,10 @@ def kiiras():
         tabla.append(aktualis_sor)
         tabla_sor_index = tabla_sor_index + 1
 
-    """
-    tabla[0][0] = 'X' 
-    tabla[1][1] = 'O'
-    """
+    
+    tabla[2][1] = 'X' 
+    tabla[0][0] = 'O'
+    
 
     print("   ", end="")
     oszlop_szam = 1
