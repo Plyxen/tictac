@@ -21,4 +21,5 @@ def tabla(meret):
 meret=kiiras.palya_meret()
 jatekos_tabla=tabla(meret)
 kiiras.palya(meret, jatekos_tabla)
-lepes.lepes(meret)
+lepes.lepes(meret, jatekos_tabla)
+lepes.jatekos_lepes(meret, jatekos_tabla)
