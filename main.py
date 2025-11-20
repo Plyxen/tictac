@@ -1,0 +1,3 @@
+import kiiras
+
+kiiras.kiiras()
