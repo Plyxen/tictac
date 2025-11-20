@@ -1,28 +1,14 @@
-def kiiras():
+def palya_meret():
     print("Tic Tac Toe Játék")
     palya = input("Válaszd ki a pálya nagyságát 3-26: ")
 
     while int(palya) < 3 or int(palya) > 26:
         palya = input("Válaszd ki a pálya nagyságát 3-26: ")
-
+        
     meret = int(palya) 
+    return meret
 
-    tabla = [] 
-    tabla_sor_index = 0
-    while tabla_sor_index < meret:
-        tabla_oszlop_index = 0
-        aktualis_sor = [] 
-        while tabla_oszlop_index < meret:
-            aktualis_sor.append(' ') 
-            tabla_oszlop_index = tabla_oszlop_index + 1
-        tabla.append(aktualis_sor)
-        tabla_sor_index = tabla_sor_index + 1
-
-    
-    tabla[2][1] = 'X' 
-    tabla[0][0] = 'O'
-    
-
+def palya(meret,tabla):
     print("   ", end="")
     oszlop_szam = 1
     while oszlop_szam <= meret:
