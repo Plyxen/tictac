@@ -13,9 +13,6 @@ def tabla(meret):
         tabla.append(aktualis_sor)
         tabla_sor_index = tabla_sor_index + 1
 
-    tabla[2][1] = 'X' 
-    tabla[0][0] = 'O'
-
     return tabla
     
 meret=kiiras.palya_meret()
